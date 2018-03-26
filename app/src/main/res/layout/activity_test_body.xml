@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.cookies.TestBody">
+
+
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/q1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/q1"
+            style="@style/Quistion_tag"
+            android:text="@string/which_variable_type_would_you_use_for_a_city_name"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q1a1"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="String"
+                android:layout_marginStart="16dp" />
+            <RadioButton
+                android:id="@+id/q1a2"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="char"/>
+            <RadioButton
+                android:id="@+id/q1a3"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="int"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/q2"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/which_from_the_coices_is_a_layout"/>
+
+        <CheckBox
+            android:id="@+id/q2a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relativelayout"
+            android:layout_marginLeft="16dp"
+            />
+        <CheckBox
+            android:id="@+id/q2a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listview"
+            android:layout_marginLeft="16dp" />
+        <CheckBox
+            android:id="@+id/q2a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constraintlauout"
+            android:layout_marginLeft="16dp" />
+        <CheckBox
+            android:id="@+id/q2a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scrollview"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/q3"
+            android:textStyle="bold"/>
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/write_below_how_to_declare_int_variable_called_quantity"
+            />
+
+        <EditText
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:imeOptions="actionDone"
+            />
+
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/q4"
+            android:textStyle="bold"/>
+        <TextView
+            style="@style/Quistion_tag"
+            android:text="@string/what_is_the_right_declration_to_write_a_method_called_jump"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q4a1"
+                android:text="Public void jump(){.....};"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"/>
+            <RadioButton
+                android:id="@+id/q4a2"
+                android:text="public void jump (){....}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"/>
+            <RadioButton
+                android:id="@+id/q4a3"
+                android:text="void jump();"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/show_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shwo_score"
+            />
+
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/Quistion_tag"
+            android:text="0"
+            />
+
+    </LinearLayout>
+</ScrollView>
