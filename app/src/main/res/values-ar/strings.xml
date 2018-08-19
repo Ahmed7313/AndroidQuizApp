@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اختبار اندرويد</string>
+    <string name="q1">السؤال الأول</string>
+    <string name="which_variable_type_would_you_use_for_a_city_name">"ما هو نوع المتغير الذي يجب ان تستخدمه من اجل اسم مدينة "</string>
+    <string name="which_from_the_coices_is_a_layout">اي خيار من الخيارات يعبر عن Layout</string>
+    <string name="q2">السؤال الثاني</string>
+    <string name="q3">السؤال الثالث</string>
+    <string name="write_below_how_to_declare_int_variable_called_quantity">اكتب في الخانة كيف ستعرف متغير اسمه quantity</string>
+    <string name="q4">السؤال الرابع</string>
+    <string name="what_is_the_right_declration_to_write_a_method_called_jump">ما هي الوسيلة الصحيحة لكتابة دالة تسمى jump</string>
+    <string name="shwo_score">أظهر النتيجة</string>
+    <string name="start_the_test">ابدا الأختبار</string>
+
+</resources>

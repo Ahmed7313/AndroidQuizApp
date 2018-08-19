@@ -1,9 +1,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -15,132 +16,237 @@
             android:text="@string/q1"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/q1"
-            style="@style/Quistion_tag"
-            android:text="@string/which_variable_type_would_you_use_for_a_city_name"/>
-        <RadioGroup
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            card_view:cardBackgroundColor="#61B292"
+            card_view:cardCornerRadius="15dp">
 
-            <RadioButton
-                android:id="@+id/q1a1"
-                android:layout_marginLeft="16dp"
+            <TextView
+                android:id="@+id/q1"
+                style="@style/Quistion_tag"
+                android:text="@string/which_variable_type_would_you_use_for_a_city_name"
+                android:textColor="@color/cardview_light_background" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            card_view:cardBackgroundColor="#ecf0f1"
+            card_view:cardCornerRadius="15dp">
+
+
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="String"
-                android:layout_marginStart="16dp" />
-            <RadioButton
-                android:id="@+id/q1a2"
-                android:layout_marginLeft="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="char"/>
-            <RadioButton
-                android:id="@+id/q1a3"
-                android:layout_marginLeft="16dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="int"/>
-        </RadioGroup>
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q1a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:onClick="Q1"
+                    android:text="String" />
+
+                <RadioButton
+                    android:id="@+id/q1a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="char" />
+
+                <RadioButton
+                    android:id="@+id/q1a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="int" />
+            </RadioGroup>
+        </android.support.v7.widget.CardView>
+
 
         <TextView
             style="@style/Quistion_tag"
             android:text="@string/q2"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
-        <TextView
-            style="@style/Quistion_tag"
-            android:text="@string/which_from_the_coices_is_a_layout"/>
-
-        <CheckBox
-            android:id="@+id/q2a1"
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Relativelayout"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            card_view:cardBackgroundColor="#61B292"
+            card_view:cardCornerRadius="15dp">
+
+            <TextView
+                style="@style/Quistion_tag"
+                android:text="@string/which_from_the_coices_is_a_layout"
+                android:textColor="@color/cardview_light_background" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            />
-        <CheckBox
-            android:id="@+id/q2a2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Listview"
-            android:layout_marginLeft="16dp" />
-        <CheckBox
-            android:id="@+id/q2a3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Constraintlauout"
-            android:layout_marginLeft="16dp" />
-        <CheckBox
-            android:id="@+id/q2a4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scrollview"
-            android:layout_marginLeft="16dp"/>
+            android:layout_marginRight="16dp"
+            card_view:cardBackgroundColor="#ecf0f1"
+            card_view:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/q2a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="Q2"
+                    android:text="Relativelayout" />
+
+                <CheckBox
+                    android:id="@+id/q2a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Listview" />
+
+                <CheckBox
+                    android:id="@+id/q2a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="Q2"
+                    android:text="Constraintlauout" />
+
+                <CheckBox
+                    android:id="@+id/q2a4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Scrollview" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
 
         <TextView
             style="@style/Quistion_tag"
             android:text="@string/q3"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            card_view:cardBackgroundColor="#61B292"
+            card_view:cardCornerRadius="15dp">
         <TextView
             style="@style/Quistion_tag"
             android:text="@string/write_below_how_to_declare_int_variable_called_quantity"
-            />
+            android:textColor="@color/cardview_light_background" />
+        </android.support.v7.widget.CardView>
 
-        <EditText
-            android:id="@+id/q3"
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="8"
-            android:imeOptions="actionDone"
-            />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            card_view:cardBackgroundColor="#ecf0f1"
+            card_view:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                android:imeOptions="actionDone"
+                android:inputType="textVisiblePassword"
+                android:onClick="Q3" />
+        </android.support.v7.widget.CardView>
 
         <TextView
             style="@style/Quistion_tag"
             android:text="@string/q4"
-            android:textStyle="bold"/>
-        <TextView
-            style="@style/Quistion_tag"
-            android:text="@string/what_is_the_right_declration_to_write_a_method_called_jump"/>
+            android:textStyle="bold" />
 
-        <RadioGroup
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view6"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            card_view:cardBackgroundColor="#61B292"
+            card_view:cardCornerRadius="15dp">
 
-            <RadioButton
-                android:id="@+id/q4a1"
-                android:text="Public void jump(){.....};"
+            <TextView
+            style="@style/Quistion_tag"
+                android:text="@string/what_is_the_right_declration_to_write_a_method_called_jump"
+                android:textColor="@color/cardview_light_background" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            card_view:cardBackgroundColor="#ecf0f1"
+            card_view:cardCornerRadius="15dp">
+
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"/>
-            <RadioButton
-                android:id="@+id/q4a2"
-                android:text="public void jump (){....}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"/>
-            <RadioButton
-                android:id="@+id/q4a3"
-                android:text="void jump();"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"/>
-        </RadioGroup>
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q4a1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Public void jump(){.....};" />
+
+                <RadioButton
+                    android:id="@+id/q4a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="Q4"
+                    android:text="public void jump (){....}" />
+
+                <RadioButton
+                    android:id="@+id/q4a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="void jump();" />
+            </RadioGroup>
+        </android.support.v7.widget.CardView>
 
         <Button
             android:id="@+id/show_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/shwo_score"
+            android:layout_gravity="center"
             />
 
-
-        <TextView
-            android:id="@+id/score"
-            style="@style/Quistion_tag"
-            android:text="0"
-            />
 
     </LinearLayout>
 </ScrollView>
